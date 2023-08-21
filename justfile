@@ -1,3 +1,4 @@
+# The default action, builds and runs
 default: build run
 
 # Build the interpreter
@@ -17,9 +18,7 @@ br: build run
 test:
     mvn test
 
-# [no-cd]
+# Generate the AST
 generate-ast:
     javac ./src/main/java/io/github/kaubu/tool/GenerateAst.java
     cd ./src/main/java/ && java io/github/kaubu/tool/GenerateAst io/github/kaubu/lox
-
-# cd ./src/main/java/io/github/kaubu/ && java tool/GenerateAst lox

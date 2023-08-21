@@ -5,8 +5,6 @@ import java.io.PrintWriter;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
-// My own
-import java.io.File;
 
 public class GenerateAst {
     public static void main(String[] args) throws IOException {
@@ -27,8 +25,6 @@ public class GenerateAst {
         String outputDir, String baseName, List<String> types
     ) throws IOException {
         String home = System.getProperty("user.dir");
-        // String path = home + File.pathSeparator + outputDir +
-        //     File.pathSeparator + baseName + ".java";
         String path = Paths.get(home, outputDir, baseName).toString()
             + ".java";
         PrintWriter writer = new PrintWriter(path, "UTF-8");
