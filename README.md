@@ -8,6 +8,12 @@
 
 ## Build
 
+Get list of actions:
+
+```sh
+just
+```
+
 Build the app:
 
 ```sh
@@ -17,9 +23,6 @@ just build
 Build and then run:
 
 ```sh
-# it's the default just action
-just
-# or
 just br
 # or
 just build run

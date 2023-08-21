@@ -1,5 +1,7 @@
-# The default action, builds and runs
-default: build run
+# The default action, lists the potential actions
+[private]
+default:
+    @ just -l
 
 # Build the interpreter
 build:
