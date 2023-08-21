@@ -17,9 +17,12 @@ just build
 Build and then run:
 
 ```sh
-just build run
+# it's the default just action
+just
 # or
 just br
+# or
+just build run
 ```
 
 Just run it:
