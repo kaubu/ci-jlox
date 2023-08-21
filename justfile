@@ -6,8 +6,12 @@ build:
 # TODO: Get Maven version each dynamically insert it
 # Run the compiled Jar
 run:
-    java -cp ./target/jlox-0.1.0.jar io.github.kaubu.lox.Lox
+    java -cp ./target/jlox-0.2.0.jar io.github.kaubu.lox.Lox
 
 # Build and run together
 br:
     just build run
+
+# Test the package
+test:
+    mvn test

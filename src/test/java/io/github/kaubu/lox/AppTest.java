@@ -1,4 +1,4 @@
-package io.github.kaubu;
+package io.github.kaubu.lox;
 
 import static org.junit.Assert.assertTrue;
 
